@@ -18,7 +18,7 @@ Giga Hidjrika Aura Adkhy
 
 ⚠ Make sure python and pip is installed in your device.
 
-1. Clone [Infinicus - Plant_AI]() or [ahmadzaki2975 - Plant_AI]().
+1. Clone [ahmadzaki2975 - Plant_AI](https://github.com/ahmadzaki2975/Plant_AI).
 
 2. Navigate to Flask folder
 `$ cd {your directory}/Plant_AI/Flask`
