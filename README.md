@@ -29,6 +29,9 @@ Giga Hidjrika Aura Adkhy
 
 4. If all requirements are installed, server should run in port 5000.
 
+![image](https://user-images.githubusercontent.com/87590846/183433356-235ee8ab-eb3f-41e1-8f20-471eaac4fc1a.png)
+
+
 ### Front End
 
 ⚠ Make sure node.js and npm / yarn is installed in your device. 
