@@ -42,3 +42,10 @@ Giga Hidjrika Aura Adkhy
 
 3. Open `http://localhost:3000`
 
+4. If you set the back end to run not in port 5000, change the API accordingly. 
+
+`pages/api/plant-ai.js`
+
+![image](https://user-images.githubusercontent.com/87590846/183436564-edea32e3-c26e-45f2-94d9-afde7946c5a4.png)
+
+
