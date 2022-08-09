@@ -69,7 +69,7 @@ function Form() {
       <form
         action="http://localhost:5000/predict"
         method="POST"
-        className="flex flex-col items-center bg-Hamagon p-5 rounded"
+        className="flex flex-col items-center bg-Hamagon p-5 rounded mb-10"
       >
         <label htmlFor="image-input">Upload Image</label>
         <input
@@ -92,13 +92,17 @@ function Form() {
         </div>
       </form>
       <div id="AI-Result" className="text-center bg-Hamagon rounded">
-        <div className="flex justify-center mt-10 py-5 px-5">
-          {image ? <Image src={image} width={400} height={300} /> : ""}
-        </div>
+        {
+          image
+          ? <div className="flex justify-center py-5 px-5">
+              <Image src={image} width={400} height={300} />
+            </div>
+          : ""
+        }
         {serverStatus === "Offline" ? (
-          <span className="text-red-500 bg-red-300 px-2 py-[2px] rounded">
+          <h1 className="text-red-500 bg-red-300 p-3 pt-5 rounded">
             Server is offline
-          </span>
+          </h1>
         ) : (
           <>
             <h1 className="p-3 pt-5">Result:</h1>
