@@ -51,4 +51,6 @@ Giga Hidjrika Aura Adkhy
 
 ![image](https://user-images.githubusercontent.com/87590846/183436564-edea32e3-c26e-45f2-94d9-afde7946c5a4.png)
 
+### Front end can also be opened [here](https://hamagon.vercel.app)
+
 
