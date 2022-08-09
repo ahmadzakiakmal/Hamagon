@@ -76,7 +76,7 @@ function Form() {
           id="image-input"
           name="image-input"
           type="file"
-          className="bg-HamagonDark rounded w-full"
+          className="bg-HamagonDark rounded w-full md:w-[50%]"
           accept="image/*"
           onChange={(e) => {
             onImageChange(e);
