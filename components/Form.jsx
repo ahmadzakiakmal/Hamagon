@@ -31,7 +31,6 @@ function Form() {
     const formData = new FormData();
     const imageInput = document.querySelector("#image-input");
     formData.append("file", imageInput.files[0]);
-    console.log(formData);
     if (serverStatus === "Online") {
       //? API call, post image, handle response
       plantAI
