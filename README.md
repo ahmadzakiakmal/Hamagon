@@ -49,8 +49,8 @@ Giga Hidjrika Aura Adkhy
 
 `pages/api/plant-ai.js`
 
-Front end can also be opened remotely via `https://hamagon.vercel.app`
-
 ![image](https://user-images.githubusercontent.com/87590846/183436564-edea32e3-c26e-45f2-94d9-afde7946c5a4.png)
+
+### Front end can also be opened [here](https://hamagon.vercel.app)
 
 
