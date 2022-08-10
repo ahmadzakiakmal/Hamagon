@@ -7,6 +7,7 @@ function Form() {
   const [file, setFile] = useState("");
   const [aiResult, setAiResult] = useState("");
   const [serverStatus, setServerStatus] = useState("Contacting server...");
+  let isFilled = 0;
 
   // !Test Fetching
   useEffect(() => {
@@ -20,9 +21,8 @@ function Form() {
     const [inputFile] = e.target.files;
     if (inputFile) {
       setImage(URL.createObjectURL(inputFile));
-      console.log(inputFile);
       setFile(inputFile);
-      console.log(image);
+      isFilled = false;
     }
   };
 
@@ -37,11 +37,12 @@ function Form() {
         .post(`/predict`, formData)
         .then((response) => {
           console.log(response.data);
-          console.log(response.request);
-          setAiResult(response.data);
-          // const resultDisplay = document.querySelector("#AI-Result");
-          // if(resultDisplay.innerHTML.length === 0) {
-          //   resultDisplay.innerHTML += aiResult;
+          // setAiResult(response.data);
+          const resultDisplay = document.querySelector("#AI-Result");
+          console.log(resultDisplay)
+          resultDisplay.innerHTML = response.data;
+          // if(isFilled === false) {
+          //   isFilled = true
           // }
         })
         .catch((err) => console.error(err));
@@ -90,7 +91,7 @@ function Form() {
           Check
         </div>
       </form>
-      <div id="AI-Result" className="text-center bg-Hamagon rounded">
+      <div  className="text-center bg-Hamagon rounded">
         {
           image
           ? <div className="flex justify-center py-5 px-5">
@@ -102,12 +103,8 @@ function Form() {
           <h1 className="text-red-500 bg-red-300 p-3 pt-5 rounded">
             Server is offline
           </h1>
-        ) : (
-          <>
-            <h1 className="p-3 pt-5">Result:</h1>
-            <p className="px-5 pb-10">{aiResult}</p>
-          </>
-        )}
+        ) : ""}
+        <div id="AI-Result" className="px-5 pb-10"></div>
       </div>
     </div>
   );
