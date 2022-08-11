@@ -19,3 +19,9 @@ a {
   box-sizing: border-box;
   font-family: "Josefin Sans", sans-serif;
 }/*# sourceMappingURL=globals.css.map */
+
+.hero {
+  background-image: url("/glenn-carstens-peters-piNf3C4TViA-unsplash.jpg");
+  background-position: bottom;
+  background-size: cover;
+}
